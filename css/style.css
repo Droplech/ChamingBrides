@@ -126,7 +126,7 @@ h1,h2,h3,h4,p{
 .first_screen .banner_block{
     width: 1110px;
     height: 330px;
-    background-image: url('../img/banner/123.jpg');
+    background-image: url('../img/first_block/bg.jpg');
     background-position-x: -90px;
 }
 

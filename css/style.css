@@ -126,7 +126,7 @@ h1,h2,h3,h4,p{
 .first_screen .banner_block{
     width: 1110px;
     height: 330px;
-    background-image: url('../img/banner/carusel.jpg');
+    background-image: url('../img/banner/carusel_rl.jpg');
     background-position-x: -90px;
 }
 

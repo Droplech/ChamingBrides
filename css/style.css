@@ -516,6 +516,16 @@ h1,h2,h3,h4,p{
 }
 
 
+
+.open_list_services{
+    overflow: hidden;
+    height: 155px;
+}
+.open_list_services ul{
+    height: 100%;
+    overflow: auto;
+}
+
 @media screen and (max-width: 1440px) {
     .navigation{
         justify-content: space-between;

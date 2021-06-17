@@ -561,7 +561,12 @@ h1,h2,h3,h4,p{
     background-color: #fff;
     border-radius: 5px;
 }
-
+.membership_item_wrapper .img{
+    width: 100px;
+}
+.membership_item_wrapper .img img{
+    width: 100%;
+}
 .membership_item_wrapper .txt {
     text-align: center;
 }
@@ -630,7 +635,7 @@ h1,h2,h3,h4,p{
 }
 .best_offer .txt .price_ofer .price_new{
     color: #fff;
-    background-color: #C63AD9;
+    background-color: red;
     border-radius: 5px;
     padding: 2px 5px;
     font-weight: 700;

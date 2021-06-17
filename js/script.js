@@ -19,6 +19,7 @@ $(document).ready(function(){
         }else{
             $('.burger_btn').removeClass('burger-active')
             $('.burger_menu').slideUp()
+            $('.burger_menu li').find('.open_list').slideUp()
         }
     })
 

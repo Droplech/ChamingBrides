@@ -17,6 +17,12 @@ h1,h2,h3,h4,p{
     margin: 0;
 }
 
+.container{
+    max-width: 1640px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .navigation {
     width: 100%;
     height: 55px;
@@ -51,6 +57,8 @@ h1,h2,h3,h4,p{
 .nav_wrapper ul li {
     padding: 8px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .nav_wrapper ul li a,
 .nav_wrapper ul li span{
@@ -70,6 +78,8 @@ h1,h2,h3,h4,p{
 
 .nav_wrapper .right_nav ul li{
     padding: 8px 16px;
+    display: flex;
+    align-items: center;
 } 
 
 
@@ -271,11 +281,7 @@ h1,h2,h3,h4,p{
 
 
 
-.special_ladies .container{
-    max-width: 1640px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
+
 
 .special_ladies_wrapper{
     display: flex;
@@ -350,11 +356,7 @@ h1,h2,h3,h4,p{
     background-color: #292C2F;
 }
 
-.footer .container{
-    max-width: 1640px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
+
 
 
 .footer_wrapper{
@@ -525,7 +527,165 @@ h1,h2,h3,h4,p{
     height: 100%;
     overflow: auto;
 }
+.memberships_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.membership{
+    padding: 50px 0;
+    
+}
+.membership h1{
+    font-size: 30px;
+    padding-left: 20px;
+}
+.membership_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.membership_item{
+    flex: 0 0 25%;
+    
+    padding: 20px;
+}
+.membership_item_wrapper{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membership_item_wrapper .txt {
+    text-align: center;
+}
+
+.membership_item_wrapper .txt h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.membership_item_wrapper .txt p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.membership_item_wrapper .txt span{
+    display: block;
+    font-size: 16px;
+}
+
+.membership_item_wrapper .txt .price_one,
+.membership_item_wrapper .txt .price_two{
+    font-weight: 700;
+}
+
+.membership_item_wrapper .txt .order_now{
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #38C072;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 15px;
+    margin-top: 5px;
+}
+
+.membership_item_wrapper .txt .price_ofer{
+    margin-top: 15px;
+}
+
+
+.best_offer .txt .price_one ,
+.best_offer .txt .price_two{
+    position: relative;
+    color: gray;
+}
+.best_offer .txt .price_one::before ,
+.best_offer .txt .price_two::before{
+    content: "";
+    width: 55px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(-19deg);
+    
+}
+
+.best_offer .txt .price_ofer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.best_offer .txt .price_ofer .price_new{
+    color: #fff;
+    background-color: #C63AD9;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-weight: 700;
+}
+
+
+
+
+.best_offer .txt .price_ofer .price_all{
+    position: relative;
+    color: gray
+}
+
+
+.best_offer .txt .price_ofer .price_all::before{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(-16deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1680px){
+    .nav_wrapper{
+        width: 83%;
+    }
+}
 @media screen and (max-width: 1440px) {
     .navigation{
         justify-content: space-between;
@@ -535,6 +695,25 @@ h1,h2,h3,h4,p{
     }    
     .nav_wrapper{
         width: 80%;
+    }
+}
+@media screen and (max-width: 1366px){
+    .nav_wrapper_memberpage .right_nav ul li{
+        padding: 8px;
+    }
+    .membership_item_wrapper .img{
+        width: 100px;
+    }
+    .membership_item_wrapper .img img{
+        width: 100%;
+    }
+    .nav_wrapper_memberpage  ul{
+        height: 100%;
+    }
+    .nav_wrapper_memberpage  ul li{
+        padding: 5px;
+        display: flex;
+        align-items: center;
     }
 }
 @media screen and (max-width: 1024px){
@@ -557,6 +736,21 @@ h1,h2,h3,h4,p{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .membership_item{
+        flex: 0 0 33.33%;
+    }
+    .nav_wrapper_memberpage  ul li a,
+    .nav_wrapper_memberpage  ul li span{
+        font-size: 11px;
+    }
+    .nav_wrapper_memberpage .li_title{
+        display: flex;
+        align-items: center;
+    }
+    .nav_wrapper_memberpage{
+        width: 83%;
+    } 
+
 }
 @media screen and (max-width: 800px){
     .content_banner .circle{
@@ -582,6 +776,13 @@ h1,h2,h3,h4,p{
     }
     .content_banner{
         flex-wrap: wrap;
+    }
+    .membership_item{
+        flex: 0 0 50%;
+    }
+    .membership{
+        padding: 25px 0;
+        
     }
 }
 @media screen and (max-width: 500px){
@@ -639,6 +840,9 @@ h1,h2,h3,h4,p{
     }
     .right_block_content{
         margin: 0 auto;
+    }
+    .membership_item{
+        flex: 0 0 100%;
     }
 }
 

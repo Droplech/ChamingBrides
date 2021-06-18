@@ -541,9 +541,9 @@ h1,h2,h3,h4,p{
     font-size: 30px;
     padding-left: 20px;
 }
-.membership_wrapper{
-    display: flex;
-    flex-wrap: wrap;
+.bestOffer_block, .memberships_block{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .membership_item{
@@ -678,26 +678,53 @@ h1,h2,h3,h4,p{
 
 
 
+.membership_wrapper .description{
+    flex: 0 0 50% ;
+    padding: 20px;
+    
+}
+
+.membership_wrapper .description .description_item{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+.membership_wrapper .description .description_item h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.bestOffer_block .description .description_item p{
+    font-size: 16px;
+    text-align: justify;
+}
 
 
 
+.membership_wrapper  .description .description_item span,
+.membership_wrapper  .description .description_item .phone{
+    display: block;
+    text-align: left;
+}
 
 
+.membership_wrapper .description .description_item a{
+    color: #BF005A;
+}
 
 
+.membership_wrapper  .description .description_item span{
+    font-weight: 600;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.description_mob{
+    display: none;
+}
 
 
 @media screen and (max-width: 1680px){
@@ -769,7 +796,9 @@ h1,h2,h3,h4,p{
     .nav_wrapper_memberpage{
         width: 83%;
     } 
-
+    .bestOffer_block .description{
+        flex: 0 0 100%;
+    }
 }
 @media screen and (max-width: 800px){
     .content_banner .circle{
@@ -866,6 +895,17 @@ h1,h2,h3,h4,p{
     .best_offer .txt h4 {
         width: 50%;
         margin: 0 auto;
+    }
+    .membership_wrapper .description{
+        display: none;
+    }
+    .membership_wrapper .description_mob{
+        display: block;
+        flex: 0 0 100%;
+    }
+    .membership_wrapper .description .description_item span, 
+    .membership_wrapper .description .description_item .phone{
+        text-align: center;
     }
 }
 

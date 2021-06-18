@@ -863,6 +863,10 @@ h1,h2,h3,h4,p{
     .membership_item{
         flex: 0 0 100%;
     }
+    .best_offer .txt h4 {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
 
 
